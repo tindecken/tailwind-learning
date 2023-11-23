@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { onMounted } from "vue";
@@ -14,14 +14,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-indigo-400 h-screen text-white">
+  <div class="mx-auto h-screen bg-indigo-400 text-white">
     <header class="py-16">
-      <h1 class="text-5xl font-bold text-center mb-6">Create Tailwind</h1>
+      <h1 class="mb-6 text-center text-5xl font-bold">Create Tailwind</h1>
       <p className="text-center mb-6 text-xl">
         If you like this project, consider giving it a star on GitHub!
       </p>
 
-      <div class="flex flex-row justify-center items-center gap-4">
+      <div class="flex flex-row items-center justify-center gap-4">
         <a
           class="github-button"
           href="https://github.com/andrejjurkin/create-tw"
@@ -46,12 +46,16 @@ onMounted(() => {
       </div>
     </header>
 
-    <div class="flex gap-16 items-center justify-center">
+    <div class="flex items-center justify-center gap-16">
       <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="sm:w-24 sm:h-24 md:w-24 md:h-24" alt="Vite logo" />
+        <img
+          src="/vite.svg"
+          class="sm:h-24 sm:w-24 md:h-24 md:w-24"
+          alt="Vite logo"
+        />
       </a>
       <a href="https://vuejs.org/" target="_blank">
-        <img src="./assets/vue.svg" class="w-24 h-24" alt="Vue logo" />
+        <img src="./assets/vue.svg" class="h-24 w-24" alt="Vue logo" />
       </a>
     </div>
   </div>
